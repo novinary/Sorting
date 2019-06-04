@@ -7,6 +7,10 @@ def merge( arrA, arrB ):
 
     a = 0
     b = 0
+
+    # Using print statement to get some insight into who the array is being sorted
+    # Using python formatting string to get the sorted left half and right half
+    print("%15s %-15s" % (arrA, arrB))
     # compare the first element of each list
     for i in range(0, elements):
         # merge all elements in arrA
@@ -17,7 +21,7 @@ def merge( arrA, arrB ):
         elif b >= len(arrB):
             merged_arr[i] = arrA[a]
             a += 1
-        # add to final array as next element in arrA must be smaller
+        # add it to final array as next element in arrA must be smaller
         elif arrA[a] < arrB[b]: 
             merged_arr[i] = arrA[a]
             a += 1
@@ -39,7 +43,7 @@ def merge_sort( arr ):
 
 # Testing my merge_sort function 
 # Generate random numbers where size is 10 and numbers no bigger than 50
-def create_random_array(size = 10, max = 50):
+def create_random_array(size = 8, max = 50):
     return [randint(0, max) for _ in range(size)]
 
 test = create_random_array()
