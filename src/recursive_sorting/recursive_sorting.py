@@ -38,6 +38,7 @@ def merge_sort( arr ):
     return arr
 
 # Testing my merge_sort function 
+# Generate random numbers where size is 10 and numbers no bigger than 50
 def create_random_array(size = 10, max = 50):
     return [randint(0, max) for _ in range(size)]
 
