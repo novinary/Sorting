@@ -10,7 +10,7 @@ def merge( arrA, arrB ):
 
     # Using print statement to get some insight into who the array is being sorted
     # Using python formatting string to get the sorted left half and right half
-    print("%15s %-15s" % (arrA, arrB))
+    # print("%15s %-15s" % (arrA, arrB))
     # compare the first element of each list
     for i in range(0, elements):
         # merge all elements in arrA
@@ -43,13 +43,13 @@ def merge_sort( arr ):
 
 # Testing my merge_sort function 
 # Generate random numbers where size is 10 and numbers no bigger than 50
-def create_random_array(size = 8, max = 50):
-    return [randint(0, max) for _ in range(size)]
+# def create_random_array(size = 8, max = 50):
+#     return [randint(0, max) for _ in range(size)]
 
-test = create_random_array()
-print(test)
-result = merge_sort(test)
-print(result)
+# test = create_random_array()
+# print(test)
+# result = merge_sort(test)
+# print(result)
 
 # STRETCH: implement an in-place merge sort algorithm
 def merge_in_place(arr, start, mid, end):
